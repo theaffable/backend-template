@@ -8,3 +8,7 @@ Included:
 - Kotlinx serialization
 - Kotest & mockk for testing
 - Multi-stage Dockerfile
+
+Included but disabled by default:
+- Exposed together with Postgres driver
+- 
