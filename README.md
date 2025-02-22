@@ -10,5 +10,5 @@ Included:
 - Multi-stage Dockerfile
 
 Included but disabled by default:
+- Ktor
 - Exposed together with Postgres driver
-- 
