@@ -52,4 +52,4 @@ kotest = ["kotest-runner", "kotest-assertions", "mockk"]
 #ktor = ["ktor-server-core", "ktor-server-netty", "ktor-server-config-yaml", "logback-classic", "ktor-server-content-negotiation", "ktor-serialization-kotlinx-json"]
 
 # uncomment if using exposed
-#exposed-spring = ["exposed", "postgres-driver", "exposed-java-time"]
+#exposed = ["exposed-core", "postgres-driver", "exposed-java-time"]
