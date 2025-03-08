@@ -14,6 +14,9 @@ mockk = "1.13.16"
 #exposed = "0.57.0"
 #postgres-driver = "42.7.4"
 
+# uncomment if using kafka
+#kafka-version = "3.9.0"
+
 [libraries]
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "reflect" }
@@ -31,6 +34,9 @@ kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", 
 #exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
 #exposed-java-time = { module = "org.jetbrains.exposed:exposed-java-time", version.ref = "exposed" }
 #postgres-driver = { module = "org.postgresql:postgresql", version.ref = "postgres-driver" }
+
+# uncomment if using kafka
+#kafka = { module = "org.apache.kafka:kafka-clients", version.ref = "kafka-version" }
 
 # test
 kotest-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
