@@ -24,7 +24,10 @@ name="backend-template"
 docker build -t ${name}:latest .
 ```
 
-This will create a containerized version of the application using the multi-stage Dockerfile, which:
-- Builds the application using Gradle 8.8 and JDK 21
-- Creates a slim runtime image with OpenJDK 21
-- Exposes port 8080 for the application
+## Running Docker Image
+
+To run the Docker image with port forwarding:
+
+```bash
+docker run -p 8080:8080 backend-template:latest
+```
