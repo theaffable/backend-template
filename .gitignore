@@ -114,6 +114,9 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 .idea/**/azureSettings.xml
 
+# Augment plugin
+.idea/AugmentWebviewStateStore.xml
+
 ### Kotlin ###
 # Compiled class file
 *.class

@@ -20,7 +20,8 @@ A modern backend template for JVM-based applications built with Gradle and Kotli
 To build the project as a Docker image:
 
 ```bash
-docker build -t backend-template:latest .
+name="backend-template"
+docker build -t $(name):latest .
 ```
 
 This will create a containerized version of the application using the multi-stage Dockerfile, which:
