@@ -23,6 +23,12 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+// disable the jar task added by application plugin, we're using the shadowJar added by ktor
+tasks.jar {
+    enabled = false
+}
+
 kotlin {
     jvmToolchain(21)
     compilerOptions {

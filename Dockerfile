@@ -1,6 +1,6 @@
 # Use a multi-stage build for efficiency
 # Stage 1: Build the application
-FROM gradle:8.8-jdk21 as builder
+FROM gradle:8.8-jdk21 AS builder
 WORKDIR /app
 
 # Copy the project files
@@ -19,11 +19,11 @@ COPY secondary-adapters ./secondary-adapters
 RUN gradle build --no-daemon
 
 # Stage 2: Create runtime image
-FROM openjdk:21-jdk-slim
+FROM openjdk:27-ea-slim
 WORKDIR /app
 
 # Copy the built jar from the builder stage
-COPY --from=builder /app/build/libs/*.jar app.jar
+COPY --from=builder /app/application/build/libs/application-all.jar app.jar
 
 # Expose port 8080
 EXPOSE 8080
