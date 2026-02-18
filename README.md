@@ -21,7 +21,7 @@ To build the project as a Docker image:
 
 ```bash
 name="backend-template"
-docker build -t $(name):latest .
+docker build -t ${name}:latest .
 ```
 
 This will create a containerized version of the application using the multi-stage Dockerfile, which:
