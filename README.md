@@ -7,12 +7,12 @@ A modern backend template for JVM-based applications built with Gradle and Kotli
 ### Included
 - **Multi-module Gradle setup** - Hexagonal architecture
 - **Gradle version catalogs** - Dependency management with `.toml` file
+- **Ktor** - Web framework
 - **Kotlinx serialization** - JSON serialization/deserialization
 - **Testing framework** - Kotest & MockK
 - **Multi-stage Dockerfile** - Docker image with build caching
 
 ### Available (disabled by default)
-- **Ktor** - Web framework
 - **Exposed** - Kotlin SQL framework with PostgreSQL driver
 
 ## Building Docker Image
