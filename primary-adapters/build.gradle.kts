@@ -10,6 +10,7 @@ repositories {
 dependencies {
     implementation(project(":domain"))
     implementation(libs.bundles.kotlin)
+    implementation(libs.bundles.ktor)
 
     testImplementation(kotlin("test"))
     testImplementation(libs.bundles.kotest)

@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlinx.serialization)
+    alias(libs.plugins.ktor)
+    application
 }
 
 repositories {
@@ -12,6 +14,7 @@ dependencies {
     implementation(project(":primary-adapters"))
     implementation(project(":secondary-adapters"))
     implementation(libs.bundles.kotlin)
+    implementation(libs.bundles.ktor)
 
     testImplementation(kotlin("test"))
     testImplementation(libs.bundles.kotest)
@@ -28,4 +31,8 @@ kotlin {
             "-opt-in=kotlin.uuid.ExperimentalUuidApi"
         )
     }
+}
+
+application {
+    mainClass.set("ApplicationKt")
 }
