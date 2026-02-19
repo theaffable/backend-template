@@ -23,6 +23,12 @@ To build the project as a Docker image:
 name="backend-template"
 docker build -t ${name}:latest .
 ```
+If you want to load this image into kind control plane:
+```bash
+kind load docker-image backend-template:latest
+```
+
+
 
 ## Running Docker Image
 
